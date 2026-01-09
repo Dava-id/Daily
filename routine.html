@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Routine</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background hearts -->
+    <div class="hearts-container"></div>
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-heart"></i>
+                <span>Tuti Daily Routine</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="routine.html" class="nav-link active"><i class="fas fa-calendar-alt"></i> Daily Routine</a></li>
+                <li><a href="gallery.html" class="nav-link"><i class="fas fa-images"></i> Galeri</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section class="routine-hero">
+            <h1 class="hero-title">Daily Routine <span>Chatarina</span></h1>
+            <p class="hero-subtitle">Rutinitas harian</p>
+            <div class="routine-summary">
+                <div class="summary-card">
+                    <h3><i class="fas fa-phone-alt"></i> Total Waktu Call</h3>
+                    <p><span id="totalCall">500</span> menit/minggu</p>
+                </div>
+                <div class="summary-card">
+                    <h3><i class="fas fa-book"></i> Total Waktu Nugas</h3>
+                    <p><span id="totalTask">420</span>+ menit/minggu</p>
+                </div>
+                <div class="summary-card">
+                    <h3><i class="fas fa-brain"></i> Total Waktu Inten</h3>
+                    <p><span id="totalInten">720</span> menit/minggu</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="routine-container">
+            <div class="routine-tabs">
+                <button class="tab-btn active" data-day="senin">Senin, Rabu, Jumat</button>
+                <button class="tab-btn" data-day="selasa">Selasa, Kamis</button>
+                <button class="tab-btn" data-day="weekend">Sabtu & Minggu</button>
+            </div>
+
+            <div class="routine-content">
+                <!-- Senin, Rabu, Jumat -->
+                <div class="routine-day active" id="senin">
+                    <h2 class="day-title"><i class="fas fa-calendar-day"></i> Senin, Rabu, Jumat</h2>
+                    <div class="routine-schedule">
+                        <div class="time-card">
+                            <div class="time">04:30</div>
+                            <div class="activity">
+                                <h3>Wake Up</h3>
+                                <p>Bangun tidur dengan penuh semangat</p>
+                            </div>
+                            <div class="activity-icon">
+                                <i class="fas fa-bed"></i>
+                            </div>
+                        </div>
+                        <div class="time-card">
+                            <div class="time">04:40</div>
+                            <div class="activity">
+                                <h3>Cuci Muka, Warm Up</h3>
+                                <p>Menyegarkan diri dan pemanasan ringan</p>
+                            </div>
+                            <div class="activity-icon">
+                                <i class="fas fa-hand-paper"></i>
+                            </div>
+                        </div>
+                        <div class="time-card">
+                            <div class="time">05:00</div>
+                            <div class="activity">
+                                <h3>Masak, Makan, Mandi, Siap-siap Sekolah</h3>
+                                <p>Persiapan untuk aktivitas sekolah</p>
+                            </div>
+                            <div class="activity-icon">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                        </div>
+                        <div class="time-card">
+                            <div class="time">14:30</div>
+                            <div class="activity">
+                                <h3>Pulang Sekolah</h3>
+                                <p>Sampai di rumah setelah sekolah</p>
+                            </div>
+                            <div class="activity-icon">
+                                <i class="fas fa-school"></i>
+                            </div>
+                        </div>
+                        <div class="time-card highlight">
+                            <div class="time">16:00</div>
+                            <div class="activity">
+                                <h3>Inten</h3>
+                                <p>Sesi belajar intensif selama 4 jam</p>
+                            </div>
+                            <div class="activity-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                        </div>
+                        <div class="time-card">
+                            <div class="time">20:00</div>
+                            <div class="activity">
+                                <h3>Mandi</h3>
+                                <p>Mandi sore setelah sesi inten</p>
+                            </div>
+                            <div class="activity-icon">
+                                <i class="fas fa-shower"></i>
+                            </div>
+                        </div>
+                        <div class="time-card highlight love">
+                            <div class="time">20:20</div>
+                            <div class="activity">
+                                <h3>Call Your BF</h3>
+                                <p>Waktu spesial untuk pacar tercinta</p>
+                            </div>
+                            <div class="activity-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="time-card">
+                            <div class="time">21:20</div>
+                            <div class="activity">
+                                <h3>Nugas</h3>
+                                <p>Mengerjakan tugas-tugas sekolah</p>
+                            </div>
+                            <div class="activity-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                        </div>
+                        <div class="time-card">
+                            <div class="time">22:20</div>
+                            <div class="activity">
+                                <h3>Bobo</h3>
+                                <p>Waktu tidur untuk istirahat yang cukup</p>
+                            </div>
+                            <div class="activity-icon">
+                                <i class="fas fa-moon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="time-calculation">
+                        <h3><i class="fas fa-calculator"></i> Perhitungan Waktu</h3>
+                        <div class="calculation-results">
+                            <div class="result-item">
+                                <span class="result-label">Waktu Inten:</span>
+                                <span class="result-value">240 menit/hari (16:00-20:00)</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-label">Waktu Call:</span>
+                                <span class="result-value">60 menit/hari</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-label">Waktu Nugas:</span>
+                                <span class="result-value">60 menit/hari</span>
+                            </div>
+                            <div class="result-item total">
+                                <span class="result-label">Total/minggu (3 hari):</span>
+                                <span class="result-value">720 menit inten, 180 menit call, 180 menit nugas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Selasa, Kamis -->
+                <div class="routine-day" id="selasa">
+                    <h2 class="day-title"><i class="fas fa-calendar-day"></i> Selasa, Kamis</h2>
+                    <div class="routine-schedule">
+                        <div class="time-card">
+                            <div class="time">04:30</div>
+                            <div class="activity">
+                                <h3>Wake Up</h3>
+                                <p>Bangun tidur dengan penuh semangat</p>
+                            </div>
+                            <div class="activity-icon">
+                                <i class="fas fa-bed"></i>
+                            </div>
+                        </div>
+                        <div class="time-card">
+                            <div class="time">04:40</div>
+                            <div class="activity">
+                                <h3>Cuci Muka, Warm Up</h3>
+                                <p>Menyegarkan diri dan pemanasan ringan</p>
+                            </div>
+                            <div class="activity-icon">
+                                <i class="fas fa-hand-paper"></i>
+                            </div>
+                        </div>
+                        <div class="time-card">
+                            <div class="time">05:00</div>
+                            <div class="activity">
+                                <h3>Masak, Makan, Mandi, Siap-siap Sekolah</h3>
+                                <p>Persiapan untuk aktivitas sekolah</p>
+                            </div>
+                            <div class="activity-icon">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                        </div>
+                        <div class="time-card">
+                            <div class="time">14:30</div>
+                            <div class="activity">
+                                <h3>Pulang Sekolah</h3>
+                                <p>Sampai di rumah setelah sekolah</p>
+                            </div>
+                            <div class="activity-icon">
+                                <i class="fas fa-school"></i>
+                            </div>
+                        </div>
+                        <div class="time-card highlight love">
+                            <div class="time">17:00</div>
+                            <div class="activity">
+                                <h3>Call Your BF</h3>
+                                <p>Waktu spesial untuk pacar tercinta</p>
+                            </div>
+                            <div class="activity-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="time-card">
+                            <div class="time">17:40</div>
+                            <div class="activity">
+                                <h3>Mandi</h3>
+                                <p>Mandi sore untuk menyegarkan badan</p>
+                            </div>
+                            <div class="activity-icon">
+                                <i class="fas fa-shower"></i>
+                            </div>
+                        </div>
+                        <div class="time-card">
+                            <div class="time">18:00</div>
+                            <div class="activity">
+                                <h3>Nugas</h3>
+                                <p>Mengerjakan tugas-tugas sekolah</p>
+                            </div>
+                            <div class="activity-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                        </div>
+                        <div class="time-card highlight love">
+                            <div class="time">20:00</div>
+                            <div class="activity">
+                                <h3>Call Your BF & Lanjut Nugas</h3>
+                                <p>Waktu call sambil mengerjakan tugas jika masih ada</p>
+                            </div>
+                            <div class="activity-icon">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                        </div>
+                        <div class="time-card">
+                            <div class="time">22:00</div>
+                            <div class="activity">
+                                <h3>Bobo</h3>
+                                <p>Waktu tidur untuk istirahat yang cukup</p>
+                            </div>
+                            <div class="activity-icon">
+                                <i class="fas fa-moon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="time-calculation">
+                        <h3><i class="fas fa-calculator"></i> Perhitungan Waktu</h3>
+                        <div class="calculation-results">
+                            <div class="result-item">
+                                <span class="result-label">Waktu Call:</span>
+                                <span class="result-value">160 menit/hari (100+60)</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-label">Waktu Nugas:</span>
+                                <span class="result-value">120+ menit/hari (120+ lanjut)</span>
+                            </div>
+                            <div class="result-item total">
+                                <span class="result-label">Total/minggu (2 hari):</span>
+                                <span class="result-value">320 menit call, 240+ menit nugas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sabtu & Minggu -->
+                <div class="routine-day" id="weekend">
+                    <h2 class="day-title"><i class="fas fa-calendar-day"></i> Sabtu & Minggu</h2>
+                    <div class="weekend-message">
+                        <div class="weekend-icon">
+                            <i class="fas fa-glass-cheers"></i>
+                        </div>
+                        <h2>FREE DAY! DO WHAT YOU WANT!!!</h2>
+                        <p>Hari libur untuk bersantai, mengejar hobi, atau menghabiskan waktu bersama orang tercinta.</p>
+                        <p>Nikmati waktu luangmu sepenuhnya!</p>
+                    </div>
+                    <div class="weekend-suggestions">
+                        <h3><i class="fas fa-lightbulb"></i> Ide Aktivitas Weekend</h3>
+                        <div class="suggestions-grid">
+                            <div class="suggestion-card">
+                                <i class="fas fa-film"></i>
+                                <h4>Nonton Film</h4>
+                                <p>Marathon film favorit bersama</p>
+                            </div>
+                            <div class="suggestion-card">
+                                <i class="fas fa-utensils"></i>
+                                <h4>Makan Enak</h4>
+                                <p>Coba restoran atau masakan baru</p>
+                            </div>
+                            <div class="suggestion-card">
+                                <i class="fas fa-hiking"></i>
+                                <h4>Jalan-jalan</h4>
+                                <p>Explore tempat baru di kota</p>
+                            </div>
+                            <div class="suggestion-card">
+                                <i class="fas fa-heart"></i>
+                                <h4>Quality Time</h4>
+                                <p>Waktu khusus berdua saja</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="weekly-summary">
+            <h2 class="section-title">Ringkasan Mingguan</h2>
+            <div class="summary-grid">
+                <div class="summary-item">
+                    <div class="summary-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="summary-info">
+                        <h3>Total Waktu Call </h3>
+                        <p class="summary-number">500 menit</p>
+                        <p class="summary-detail">(180 menit di Senin/Rabu/Jumat + 320 menit di Selasa/Kamis)</p>
+                    </div>
+                </div>
+                <div class="summary-item">
+                    <div class="summary-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="summary-info">
+                        <h3>Total Waktu Nugas</h3>
+                        <p class="summary-number">420+ menit</p>
+                        <p class="summary-detail">(180 menit di Senin/Rabu/Jumat + 240+ menit di Selasa/Kamis)</p>
+                    </div>
+                </div>
+                <div class="summary-item">
+                    <div class="summary-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="summary-info">
+                        <h3>Total Waktu Inten</h3>
+                        <p class="summary-number">720 menit</p>
+                        <p class="summary-detail">(240 menit/hari di Senin, Rabu, Jumat)</p>
+                    </div>
+                </div>
+                <div class="summary-item">
+                    <div class="summary-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="summary-info">
+                        <h3>Waktu untuk Diri Sendiri</h3>
+                        <p class="summary-number">2 hari penuh</p>
+                        <p class="summary-detail">(Sabtu & Minggu bebas melakukan apapun)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-heart"></i> Chatarina & Dava
+            </div>
+            <p class="footer-text">We love grow 1% everyday</p>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="footer-copyright">© 2026 We Love - Always ❤️</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

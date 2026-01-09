@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background hearts -->
+    <div class="hearts-container"></div>
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-heart"></i>
+                <span>Tuti Daily Routine</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="routine.html" class="nav-link"><i class="fas fa-calendar-alt"></i> Daily Routine</a></li>
+                <li><a href="gallery.html" class="nav-link active"><i class="fas fa-images"></i> Galeri</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section class="gallery-hero">
+            <h1 class="hero-title">Galeri <span>Best Memories</span></h1>
+            <p class="hero-subtitle">Momen Momen Kita</p>
+            <div class="gallery-stats">
+                <div class="stat-item">
+                    <i class="fas fa-heart"></i>
+                    <span>100+ Kenangan</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-smile"></i>
+                    <span>Tak Terhintang Senyuman</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-infinity"></i>
+                    <span>Cinta Tak Terbatas</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-container">
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="together">Bersama</button>
+                <button class="filter-btn" data-filter="special">Momen Spesial</button>
+                <button class="filter-btn" data-filter="daily">Keseharian</button>
+                <button class="filter-btn" data-filter="travel">Jalan-jalan</button>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Photo 1 -->
+                <div class="gallery-item" data-category="together">
+                    <div class="gallery-img" style="background-color: #ffb6c1;">
+                        <div class="img-placeholder">
+                            <i class="fas fa-heart"></i>
+                            <p>Momen Bahagia Bersama</p>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Hari Pertama Kita</h3>
+                        <p>First convertation kita</p>
+                        <div class="gallery-date">
+                            <i class="far fa-calendar"></i> 14 Februari 2026
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 2 -->
+                <div class="gallery-item" data-category="travel">
+                    <div class="gallery-img" style="background-color: #ffccd5;">
+                        <div class="img-placeholder">
+                            <i class="fas fa-umbrella-beach"></i>
+                            <p>Liburan Pantai</p>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Sunset di Pantai</h3>
+                        <p>Liat pantai view kamu</p>
+                        <div class="gallery-date">
+                            <i class="far fa-calendar"></i> 10 Juni 2026
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 3 -->
+                <div class="gallery-item" data-category="special">
+                    <div class="gallery-img" style="background-color: #ff9eb5;">
+                        <div class="img-placeholder">
+                            <i class="fas fa-birthday-cake"></i>
+                            <p>Ulang Tahun</p>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Ulang Tahun Pertama</h3>
+                        <p>Ngerayain Ultah bareng</p>
+                        <div class="gallery-date">
+                            <i class="far fa-calendar"></i> 14 Agustus 2026
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 4 -->
+                <div class="gallery-item" data-category="daily">
+                    <div class="gallery-img" style="background-color: #ff85a2;">
+                        <div class="img-placeholder">
+                            <i class="fas fa-coffee"></i>
+                            <p>Kopi Pagi</p>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Sarapan Bareng</h3>
+                        <p>makan sambil liat kmu hehehe.</p>
+                        <div class="gallery-date">
+                            <i class="far fa-calendar"></i> 5 September 2026
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 5 -->
+                <div class="gallery-item" data-category="together">
+                    <div class="gallery-img" style="background-color: #ff6b9d;">
+                        <div class="img-placeholder">
+                            <i class="fas fa-film"></i>
+                            <p>Movie Night</p>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Movie Night Pertama</h3>
+                        <p>Liat film bareng kmuuu</p>
+                        <div class="gallery-date">
+                            <i class="far fa-calendar"></i> 20 Maret 2026
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 6 -->
+                <div class="gallery-item" data-category="travel">
+                    <div class="gallery-img" style="background-color: #ff4d8d;">
+                        <div class="img-placeholder">
+                            <i class="fas fa-mountain"></i>
+                            <p>Pegunungan</p>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Ndaki bareng di Jateng</h3>
+                        <p>Ndaki barengg</p>
+                        <div class="gallery-date">
+                            <i class="far fa-calendar"></i> 15 Juli 2026
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 7 -->
+                <div class="gallery-item" data-category="special">
+                    <div class="gallery-img" style="background-color: #ff3385;">
+                        <div class="img-placeholder">
+                            <i class="fas fa-gift"></i>
+                            <p>Kejutan</p>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Suprise</h3>
+                        <p>kali aja ada suprise</p>
+                        <div class="gallery-date">
+                            <i class="far fa-calendar"></i> 25 Mei 2026
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 8 -->
+                <div class="gallery-item" data-category="daily">
+                    <div class="gallery-img" style="background-color: #ff1a75;">
+                        <div class="img-placeholder">
+                            <i class="fas fa-book"></i>
+                            <p>Belajar Bareng</p>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Study Date</h3>
+                        <p>Belajar barenggg</p>
+                        <div class="gallery-date">
+                            <i class="far fa-calendar"></i> 3 Oktober 2026
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="add-memory">
+                <h3><i class="fas fa-plus-circle"></i> Tambah Kenangan Baru</h3>
+                <p>Bagikan momen spesial baru kalian di sini</p>
+                <button class="btn btn-primary" id="addMemoryBtn">
+                    <i class="fas fa-camera"></i> Upload Foto Baru
+                </button>
+            </div>
+        </section>
+
+        <section class="memory-timeline">
+            <h2 class="section-title">Timeline Kenangan Kita</h2>
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-date">Feb 2026</div>
+                    <div class="timeline-content">
+                        <h3>First meet</h3>
+                        <p> Pertama kali Kita ketemu</p>
+                    </div>
+                    <div class="timeline-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Mar 2023</div>
+                    <div class="timeline-content">
+                        <h3>Movie Night Pertama</h3>
+                        <p>Menonton film romantis pertama kali bersama.</p>
+                    </div>
+                    <div class="timeline-icon">
+                        <i class="fas fa-film"></i>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Jun 2023</div>
+                    <div class="timeline-content">
+                        <h3>Liburan ke Pantai</h3>
+                        <p>Perjalanan pertama kita ke luar kota bersama.</p>
+                    </div>
+                    <div class="timeline-icon">
+                        <i class="fas fa-umbrella-beach"></i>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Aug 2026</div>
+                    <div class="timeline-content">
+                        <h3>Perayaan Ulang Tahun Pertama</h3>
+                        <p>Ulang tahun kita.</p>
+                    </div>
+                    <div class="timeline-icon">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Sekarang</div>
+                    <div class="timeline-content">
+                        <h3>Cat n Dav jr</h3>
+                        <p>Coming soon.</p>
+                    </div>
+                    <div class="timeline-icon">
+                        <i class="fas fa-infinity"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-heart"></i> Chatarina & Dava
+            </div>
+            <p class="footer-text">Moga dengan foto foto ini kita jadi inget terus</p>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="footer-copyright">© 2026 We Love - Always ❤️</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

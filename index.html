@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WE LOVE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background hearts -->
+    <div class="hearts-container"></div>
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-heart"></i>
+                <span>Tuti Daily Routine</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="routine.html" class="nav-link"><i class="fas fa-calendar-alt"></i> Daily Routine</a></li>
+                <li><a href="gallery.html" class="nav-link"><i class="fas fa-images"></i> Galeri</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Welcome To <span>We Love Journy</span></h1>
+                <p class="hero-subtitle">Web biar tuti ngga begadang</p>
+                <div class="heart-animation">
+                    <i class="fas fa-heart beating-heart"></i>
+                </div>
+                <div class="hero-buttons">
+                    <a href="routine.html" class="btn btn-primary">Lihat Daily Routine</a>
+                    <a href="gallery.html" class="btn btn-secondary">Lihat Galeri</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="couple-illustration">
+                    <i class="fas fa-heart heart-1"></i>
+                    <i class="fas fa-heart heart-2"></i>
+                    <i class="fas fa-heart heart-3"></i>
+                    <div class="couple-icon">
+                        <i class="fas fa-female"></i>
+                        <i class="fas fa-heart couple-heart"></i>
+                        <i class="fas fa-male"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2 class="section-title">Kenangan Indah Bersama</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-heart"></i>
+                    </div>
+                    <h3>Daily Routine</h3>
+                    <p>Biar Ngga Begadang Kubuatin Daily Routine</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Sesi Inten</h3>
+                    <p>Waktu belajar intensif di hari Senin, Rabu, Jumat biar ke UGM.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-camera-retro"></i>
+                    </div>
+                    <h3>Love Galerry</h3>
+                    <p>Kumpulan momen kita.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="love-counter">
+            <h2 class="section-title">Hitungan Cinta</h2>
+            <div class="counter-container">
+                <div class="counter-item">
+                    <div class="counter-number" id="callCounter">0</div>
+                    <div class="counter-label">Menit Call/Minggu</div>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-number" id="taskCounter">0</div>
+                    <div class="counter-label">Menit Nugas/Minggu</div>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-number" id="intenCounter">0</div>
+                    <div class="counter-label">Menit Inten/Minggu</div>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-number" id="loveCounter">∞</div>
+                    <div class="counter-label">Infinity Love</div>
+                </div>
+            </div>
+            <button class="btn btn-primary" id="calculateLove">Hitung Waktu Cinta</button>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-heart"></i> Chatarina & Dava
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="footer-copyright">© 2026 We Love - Always ❤️</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
